@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+dist/
+.cache/
+*.log
+*.tmp
+
+# VSCode
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Zudoku specific (build artifacts)
+.build/
+
+# Environment files (if any)
+.env
