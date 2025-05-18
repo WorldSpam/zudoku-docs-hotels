@@ -1,0 +1,6 @@
+import{Z as i,j as t}from"./entry.client-DwANNYfN.js";const r=`This project is an university assignment. The topic is creation of OpenAPI docs with Zudoku and API SDK with OpenAPI Generator.\r
+This git repo is about Zudoku docs part. The API should represent Hotel booking system CRUD operations for a Hotel/Room entities.`,a=[{depth:1,value:"About",id:"about"}],c=void 0;function n(o){const e={a:"a",code:"code",h1:"h1",p:"p",...i(),...o.components};return t.jsxs(t.Fragment,{children:[t.jsx(e.h1,{id:"about",children:"About"}),`
+`,t.jsx(e.p,{children:`This project is an university assignment. The topic is creation of OpenAPI docs with Zudoku and API SDK with OpenAPI Generator.\r
+This git repo is about Zudoku docs part. The API should represent Hotel booking system CRUD operations for a Hotel/Room entities.`}),`
+`,t.jsxs(e.p,{children:["The API schema itself is located at ",t.jsx(e.code,{inline:!0,children:"apis/openapi.yaml"})," or at ",t.jsx(e.a,{href:"https://github.com/WorldSpam/hotel-booking-api",children:"https://github.com/WorldSpam/hotel-booking-api"})]})]})}function h(o={}){const{wrapper:e}={...i(),...o.components};return e?t.jsx(e,{...o,children:t.jsx(n,{...o})}):n(o)}export{h as default,r as excerpt,c as frontmatter,a as tableOfContents};
+//# sourceMappingURL=about-Qqsdd8IW.js.map
