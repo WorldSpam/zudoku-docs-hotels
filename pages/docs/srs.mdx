@@ -1,0 +1,84 @@
+# Software Requirements Specification (SRS)
+
+## 1. Introduction
+
+### 1.1 Purpose
+The purpose of this document is to define the requirements for a web-based system that allows users to find websites similar in content or structure, using technologies such as React for the frontend and Node.js for the backend.
+
+### 1.2 Scope
+The system enables users to input a website URL and get a list of similar websites ranked by similarity metrics such as structure, content topics, and keywords, or build their pwn query based on allowed tags. The application will include user authentication, RESTful API, and responsive UI.
+
+### 1.3 Intended Audience and Reading Suggestions
+- **Developers**: for implementation details
+- **Project supervisor**: for review
+- **Testers**: for validation of functionality
+
+### 1.4 Definitions and Acronyms
+- **UI** – User Interface
+- **API** – Application Programming Interface
+
+---
+
+## 2. Overall Description
+
+### 2.1 Product Perspective
+This is a standalone web application. The frontend is built with React, the backend uses Node.js + Express, and a database like MongoDB or PostgreSQL is used for storage. The system also utilizes a similarity algorithm (e.g., cosine similarity, TF-IDF, etc.).
+
+### 2.2 Product Functions
+- Input a website URL
+- Parse and analyze HTML content
+- Search and return similar websites
+- Save searched results for futher use
+- Use known attributes to search among similar sites without the link
+- User login/registration
+- API access for advanced users
+
+### 2.3 User Characteristics
+Users are students, researchers, professionals, or simple internet users looking to explore content-related websites.
+
+### 2.4 Constraints
+- Must work in modern browsers
+- Backend hosted on Node.js-compatible server
+- Free-tier hosting services (to start)
+
+---
+
+## 3. Functional Requirements
+
+### 3.1 Website Submission
+- The system shall allow users to input a URL.
+- The system shall validate the URL format.
+
+### 3.2 Similarity Analysis
+- The system shall fetch and analyze the structure/content of the input URL.
+- The system shall return a ranked list of similar websites.
+
+### 3.3 Authentication
+- The system shall allow users to register and log in.
+- The system shall provide access to extended API only for authenticated users.
+
+---
+
+## 4. Non-Functional Requirements
+
+- The system should have a response time < 3 seconds for similarity results.
+- The system should support 100+ concurrent users.
+- The system should ensure data privacy and secure login.
+- The UI must be responsive and mobile-friendly.
+
+---
+
+## 5. External Interface Requirements
+
+### 5.1 UI Requirements
+- Web-based UI with search bar, result list, and user dashboard.
+
+### 5.2 API Requirements
+- REST API endpoints: `/analyze`, `/auth/login`, `/auth/register`, `/results`.
+
+---
+
+## 6. Appendices
+
+- A. Future enhancements: allow filtering by country/topic
+- B. Technology stack: React, Node.js, Express, MongoDB/PostgeSQL, Tailwind CSS
